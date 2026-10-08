@@ -17,7 +17,9 @@ add_executable(OOP3_1 main.cpp
         mainwindow.cpp
         mainwindow.h
         ccircle.cpp
-        ccircle.h)
+        ccircle.h
+        circlestorage.cpp
+        circlestorage.h)
 target_link_libraries(OOP3_1
         Qt::Core
         Qt::Gui

@@ -7,3 +7,6 @@ bool CCircle::contains(int pointx, int pointy) const {
 
     return dx*dx + dy*dy <= radius*radius;
 }
+void CCircle::draw(QPainter &painter) const {
+    painter.drawEllipse(x - radius,y - radius,radius * 2,radius * 2);
+}

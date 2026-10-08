@@ -11,7 +11,7 @@ CCircle *CircleStorage::getObject(int index) const {
 }
 CircleStorage::~CircleStorage() {
     for (CCircle *circle : circles) {
-        delete circle;;
+        delete circle;
     }
 }
 void CircleStorage::clearSelection() {

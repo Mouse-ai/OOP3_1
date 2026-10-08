@@ -63,5 +63,8 @@ void Mainwindow::keyPressEvent(QKeyEvent *event)
     }
 }
 void Mainwindow::resizeEvent(QResizeEvent *event) {
+    QWidget::resizeEvent(event);
 
+    update();
+    std::cout<< "Window resized: "<< event->size().width()<< " x "<< event->size().height()<< std::endl;
 }

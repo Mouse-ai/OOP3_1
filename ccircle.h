@@ -1,7 +1,6 @@
 
 #ifndef OOP3_1_CCIRCLE_H
 #define OOP3_1_CCIRCLE_H
-#include <QApplication>
 #include <QPainter>
 #include <QPen>
 

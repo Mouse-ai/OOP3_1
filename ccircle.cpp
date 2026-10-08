@@ -15,7 +15,7 @@ void CCircle::draw(QPainter &painter) const {
         painter.setPen(pen);
     }else {
         QPen pen(Qt::black);
-        pen.setWidth(3);
+        pen.setWidth(1);
         painter.setPen(pen);
     }
     painter.drawEllipse(x - radius,y - radius,radius * 2,radius * 2);

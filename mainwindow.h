@@ -7,6 +7,7 @@
 #include <QKeyEvent>
 #include "circlestorage.h"
 #include <QResizeEvent>
+#include <iostream>
 class Mainwindow: public QWidget {
 public:
     explicit Mainwindow(QWidget *parent = nullptr);

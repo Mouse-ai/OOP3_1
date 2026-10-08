@@ -13,6 +13,8 @@ public:
     int getCount() const;
     CCircle *getObject(int index) const;
     ~CircleStorage();
+    void clearSelection();
+    void removeSelected();
 };
 
 

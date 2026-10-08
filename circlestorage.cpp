@@ -14,3 +14,26 @@ CircleStorage::~CircleStorage() {
         delete circle;;
     }
 }
+void CircleStorage::clearSelection() {
+    for (CCircle *circle : circles) {
+        circle->setSelected(false);
+    }
+
+}
+void CircleStorage::removeSelected()
+{
+    int i = 0;
+
+    while (i < circles.size())
+    {
+        if (circles[i]->isSelected())
+        {
+            delete circles[i];
+            circles.erase(circles.begin() + i);
+        }
+        else
+        {
+            i++;
+        }
+    }
+}

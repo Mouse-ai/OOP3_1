@@ -13,7 +13,11 @@ find_package(Qt6 COMPONENTS
         Widgets
         REQUIRED)
 
-add_executable(OOP3_1 main.cpp)
+add_executable(OOP3_1 main.cpp
+        mainwindow.cpp
+        mainwindow.h
+        ccircle.cpp
+        ccircle.h)
 target_link_libraries(OOP3_1
         Qt::Core
         Qt::Gui
